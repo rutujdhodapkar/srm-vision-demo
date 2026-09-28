@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { ArrowUpRight, Check, ChevronDown, Download, ImagePlus, Layers3, Menu, ScanSearch, Satellite, Sparkles, Upload, X } from 'lucide-react';
 import './styles.css';
 
-const demoImage = 'https://dataspace.copernicus.eu/sites/default/files/media/images/2025-05/sentinel-2_nordlingen-germany_true-color_19062024_edit.jpg';
+const demoImage = '/srm-source.png';
 
 function Metric({ value, label, accent = false }) {
   return <div className={accent ? 'metric metric-accent' : 'metric'}><strong>{value}</strong><span>{label}</span></div>;
@@ -11,7 +11,7 @@ function Metric({ value, label, accent = false }) {
 
 function App() {
   const [image, setImage] = useState(demoImage);
-  const [fileName, setFileName] = useState('sentinel2_nordlingen_10m.tif');
+  const [fileName, setFileName] = useState('srm_close_detail_10m.png');
   const [running, setRunning] = useState(false);
   const [done, setDone] = useState(true);
   const [view, setView] = useState('result');
