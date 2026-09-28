@@ -14,9 +14,9 @@
 .proof-number { display:grid; place-items:center; width:24px; height:24px; background:var(--orange); color:var(--ink); }
 .hero-sub { margin-bottom:18px; }
 .comparison .source-layer { filter:saturate(.78) contrast(.9) blur(1.2px); transform:scale(1.012); }
-.source-layer { transform:scale(1.42); transform-origin:center; }
-.comparison .source-layer { transform:scale(1.42); }
-.result-layer img { transform:scale(1.42); transform-origin:center; }
+.source-layer { transform:scale(2.18); transform-origin:center 52%; }
+.comparison .source-layer { transform:scale(2.18); }
+.result-layer img { transform:scale(2.18); transform-origin:center 52%; }
 .comparison:before { content:''; position:absolute; inset:0; z-index:1; opacity:.18; pointer-events:none; background:linear-gradient(90deg,transparent 24.8%,var(--acid) 25%,transparent 25.2%,transparent 49.8%,var(--acid) 50%,transparent 50.2%,transparent 74.8%,var(--acid) 75%,transparent 75.2%),linear-gradient(0deg,transparent 24.8%,var(--acid) 25%,transparent 25.2%,transparent 49.8%,var(--acid) 50%,transparent 50.2%,transparent 74.8%,var(--acid) 75%,transparent 75.2%); }
 .result-layer { position:absolute; inset:0; overflow:hidden; }
 .result-layer img { width:100%; max-width:none; filter:saturate(1.38) contrast(1.15); }
